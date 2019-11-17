@@ -1,5 +1,7 @@
 {
   "name": "bird-watching-association",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

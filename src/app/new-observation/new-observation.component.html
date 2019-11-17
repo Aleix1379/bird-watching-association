@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            {{'NEW_OBSERVATION_TITLE' | translate}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div class="new-observation">
+
+        <ion-item>
+            <ion-label position="floating">{{'NEW_OBSERVATION_TITLE' | translate}}</ion-label>
+            <ion-input [(ngModel)]="data.name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">{{'NEW_OBSERVATION_NOTES' | translate}}</ion-label>
+            <ion-textarea [(ngModel)]="data.notes"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Rarity</ion-label>
+            <ion-select [(ngModel)]="data.rarity">
+                <ion-select-option *ngFor="let rarity of rarities" [value]="rarity">{{rarity.name}}</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+        <div class="observations-actions">
+            <ion-button expand="block" (click)="cancel()" color="danger">CANCEL</ion-button>
+            <ion-button expand="block" (click)="save()"
+                        [disabled]="data.name.length === 0 || data.notes.length === 0 || data.rarity === null">
+                SAVE
+            </ion-button>
+        </div>
+
+    </div>
+
+</ion-content>

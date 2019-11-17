@@ -1,0 +1,8 @@
+<div class="rarity">
+    <span class="rarity__label">{{rarity.name}}</span>
+
+    <div *ngFor="let star of rating">
+        <fa-icon [icon]="faStar" [ngClass]="{'rarity__star--yellow' : star}"></fa-icon>
+    </div>
+
+</div>

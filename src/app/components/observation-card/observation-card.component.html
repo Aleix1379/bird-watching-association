@@ -1,0 +1,14 @@
+<div class="observation-card">
+
+    <div class="observation-card__name">{{observation.speciesName}}</div>
+    <div class="observation-card__name">{{observation.geolocation | geolocation }}</div>
+
+    <div class="observation-card__rarity">
+        <app-rarity [rarity]="observation.rarity"></app-rarity>
+    </div>
+
+    <div class="observation-card__notes">{{observation.notes}}</div>
+
+    <div class="observation-card__timestamp">{{observation.timestamp | time}}</div>
+
+</div>

@@ -1,1 +1,10 @@
+.observations {
+  padding: 16px;
 
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+}

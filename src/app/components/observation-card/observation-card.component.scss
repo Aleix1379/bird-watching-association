@@ -1,0 +1,30 @@
+.observation-card {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  background: #eaeaea;
+  padding: 8px;
+
+  > div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__rarity {
+
+  }
+
+  &__notes {
+
+  }
+
+  &__timestamp {
+    font-weight: 700;
+  }
+
+}
+

@@ -1,0 +1,12 @@
+.rarity {
+  display: flex;
+
+  &__label {
+    margin-right: auto;
+  }
+
+  &__star--yellow {
+    color: #FFD700;
+  }
+
+}
